@@ -1,0 +1,22 @@
+{
+  "required": true,
+  "compatibilityLevel": "JAVA_8",
+  "package": "me.manatee.plus.mixin.mixins",
+  "refmap": "mixins.manateeplus.refmap.json",
+  "mixins": [
+    "MixinNetworkManager",
+    "MixinEntity",
+    "MixinGuiNewChat",
+    "MixinMovementInputFromOptions",
+    "MixinEntityRenderer",
+    "MixinAbstractClientPlayer",
+    "MixinLayerBipedArmor",
+    "MixinPlayerControllerMP",
+    "MixinEntityPlayer",
+    "MixinBlockSoulSand",
+    "MixinEntityPlayerSP",
+    "MixinMinecraft",
+    "MixinGuiPlayerTabOverlay",
+    "MixinGuiMainMenu"
+  ]
+}
