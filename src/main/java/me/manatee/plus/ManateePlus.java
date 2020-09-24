@@ -28,7 +28,7 @@ import java.awt.*;
 @Mod(modid = ManateePlus.MODID, name = ManateePlus.MODNAME, version = ManateePlus.MODVER, clientSideOnly = true)
 public class ManateePlus {
     public static final String MODID = "manateeplus";
-    public static final String MODNAME = "Manatee+";
+    public static final String MODNAME = "\u1d0d\u1d00\u0274\u1d00\u1d1b\u1d07\u1d07+";
     public static final String MODVER = "0.1.1";
 
     public static final Logger log = LogManager.getLogger(MODNAME);
