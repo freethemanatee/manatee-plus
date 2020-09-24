@@ -29,7 +29,7 @@ import java.awt.*;
 public class ManateePlus {
     public static final String MODID = "manateeplus";
     public static final String MODNAME = "Manatee+";
-    public static final String MODVER = "0.1";
+    public static final String MODVER = "0.1.1";
 
     public static final Logger log = LogManager.getLogger(MODNAME);
     public ClickGUI clickGui;
