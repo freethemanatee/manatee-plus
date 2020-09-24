@@ -21,7 +21,6 @@ public class ChatSuffix extends Module {
     public void setup() {
         ArrayList<String> modes = new ArrayList<>();
         modes.add("Default");
-        modes.add("Default + Version");
         ManateePlus.getInstance().settingsManager.rSetting(mode = new Setting("Mode", this, "Default", modes));
     }
 
@@ -32,7 +31,6 @@ public class ChatSuffix extends Module {
             String old = ((CPacketChatMessage) event.getPacket()).getMessage();
             String suffix = "";
             if (mode.getValString().equalsIgnoreCase("Default")) suffix = " " + toUnicode(ManateePlus.MODNAME);
-            if (mode.getValString().equalsIgnoreCase("Default + Version")) suffix = " " + toUnicode(ManateePlus.MODNAME) + " " + toUnicode(ManateePlus.MODVER);
             String s = old + suffix;
             if (s.length() > 255) return;
             ((CPacketChatMessage) event.getPacket()).message = s;
