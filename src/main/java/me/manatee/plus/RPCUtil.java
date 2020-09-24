@@ -19,9 +19,9 @@ public class RPCUtil {
         rpc.Discord_Initialize(ClientId, handlers, true, "");
         presence.startTimestamp = System.currentTimeMillis() / 1000L;
         presence.details = "Version " + ManateePlus.MODVER;
-        presence.state = "On da menu";
+        presence.state = "main menu";
         presence.largeImageKey = "bigmanatee";
-        presence.largeImageText = "Manatee+";
+        presence.largeImageText = "free him n o w";
         presence.smallImageKey = "bigblurrymanatee";
         presence.smallImageKey = "By dnger and zopac";
 
@@ -33,7 +33,7 @@ public class RPCUtil {
                     details = "Version " + ManateePlus.MODVER;
                     state = "";
                     if (mc.isIntegratedServerRunning()) {
-                        state = "Freeing manatee alone";
+                        state = "freeing the manatee alone :( ";
                     }
                     else if (mc.getCurrentServerData() != null) {
                         if (!mc.getCurrentServerData().serverIP.equals("")) {
@@ -41,7 +41,7 @@ public class RPCUtil {
                                 }
 
                     } else {
-                            state = "On da menu";
+                            state = "main menu";
                     }
                     if (!details.equals(presence.details) || !state.equals(presence.state)) {
                         presence.startTimestamp = System.currentTimeMillis() / 1000L;
